@@ -1,0 +1,103 @@
+/* You can not modify anything in the HTML */
+/* You can only modify the CSS file */
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+
+}
+
+.container{
+    width: 100vw;
+    height: 100%;
+}
+.navbar-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.list{
+    display: flex;
+}
+.grow-list .list li{
+  list-style: none;
+  padding: 0 15px 0 15px;
+  cursor: pointer;
+  font-weight: bolder;
+  color:dimgray;
+}
+
+
+.banner-container{
+    margin: 0 2rem 0 2rem;
+   
+    height: 100%;
+   
+   display:flex;
+  
+}
+
+
+.banner-container > :first-child{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.heading-text{
+    padding:20px ;
+    color: rgb(85, 65, 142);
+    font-size: 55px;
+    text-align: center;
+}
+
+span{
+    color: blueviolet;
+}
+.nav-button{
+    padding: .5rem 1rem .5rem 1rem;
+    border-radius: 7px ;
+    border: none;
+    background-color: rgb(99, 76, 164);
+    color: white;
+    cursor: pointer;
+}
+
+.btn{
+    margin: 35px;
+    padding:  17px 20px; 
+}
+.banner-container div img{
+    max-width: 100%;
+    height: auto;
+}
+.banner-container div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.description{
+    font-weight: bold;
+    color: darkgray;
+    text-align: center;
+}
+
+@media only screen and (max-width: 1200px) {
+
+    .banner-container{
+        margin: 0 2rem 0 2rem;
+       
+        height: 100vh;
+       
+       display:flex;
+       flex-wrap: wrap;
+      
+    }
+}

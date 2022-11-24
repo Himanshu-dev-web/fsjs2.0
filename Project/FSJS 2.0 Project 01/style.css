@@ -23,6 +23,10 @@
 .list{
     display: flex;
 }
+.list-item:nth-child(1){
+    text-decoration: underline;
+   
+}
 .grow-list .list li{
   list-style: none;
   padding: 0 15px 0 15px;

@@ -1,0 +1,634 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+header{
+    background-image: url("./Project/Assets/Photos/futuristic-bg.png");
+}
+.nav{
+    padding-top: 1.5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+
+.lists{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.nav ul{
+    display: flex;
+    
+}
+
+.nav ul li{
+    list-style: none;
+    padding:0  .5rem  0 .5rem ;
+}
+
+.signin{
+    display: flex;
+    flex-direction: row;
+}
+button:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(231, 85, 74);
+    border: none;
+    font-size:medium;
+    color: white;
+    padding: .3rem .5rem .3rem .5rem;
+    cursor: pointer;
+}
+
+button:nth-child(1){
+    display: flex;
+    
+    background-color: transparent;
+    border: none;
+    font-size:medium;
+    padding: .3rem .5rem .3rem .5rem;
+    cursor: pointer;
+    color: white;
+}
+
+
+main{
+    display: flex;
+    color: white;
+    width: 100%;
+    height: 500px; 
+}
+
+.btn-main{
+    margin-top: 2rem ;
+    display: flex;
+}
+.btn-main button{
+    margin: 0 .5rem 0 .5rem;
+}
+.btn-main > button:nth-child(1){
+    border: 1px solid white;
+}
+main div:nth-child(1){
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 130px;
+}
+main div:nth-child(2){
+    width: 50%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.play{
+   display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+
+    
+}
+.arrow{
+   
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    width: 50vw;
+}
+
+
+.ply-btn{
+    width: 70px;
+    cursor: pointer;
+}
+
+.ply-btn-arrow{
+    width: 50px;
+    height: 60px;
+    cursor: pointer;
+}
+
+@media (min-width: 700px) and (max-width: 1000px) {
+   
+    body {
+        background-color: rgb(255, 255, 255);
+    }
+
+    main div:nth-child(1){
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 40px;
+    }
+
+  }
+
+
+
+@media (max-width: 900px) {
+    main{
+        display: flex;
+        color: white;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 500px; 
+    }
+    main div:nth-child(1){
+       
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    main div:nth-child(2){
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+    }
+    body{
+    }
+    .war{
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .war-image{
+        width: 70%;
+        margin-bottom: 2rem;
+    }
+    
+    .war-image img{
+        width: 100%;
+    }
+    
+    .war-desc {
+        width: 50%;
+        text-align: center;
+    }
+    .war-buttons{
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        }
+        .war-buttons button{
+            margin: 0 5px 0 5px;
+            margin-top: 1rem;
+        }
+        .war-buttons :nth-child(1){
+            color: rgb(231, 85, 74);
+            border: 2px solid rgb(231, 85, 74);
+        }
+     
+}
+
+
+
+.games-type{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4rem;
+}
+.games-type h1{
+    margin-bottom: 2rem;
+    font-weight:bold;
+    width: 25rem;
+    text-align: center;
+}
+.games{
+    width: 250px;
+    padding: 10px;
+}
+.card{
+width: 100%;
+}
+
+
+.card > img{
+  width: 100%;
+  height: 305px;
+  object-fit: cover;
+}
+
+.desc{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: rgba(255, 255, 255, .5);
+    backdrop-filter: blur(10px);
+    top: -4.7rem;
+    color: white;
+    height: 72px;
+}
+
+.desc > div > p {
+    font-size: small;
+    color: rgb(210, 212, 214);
+}
+
+.desc > div{
+    padding-right: 15px;
+}
+
+.pop-games{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+
+
+@media (min-width: 901px) {
+.war{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+}
+
+.war-image{
+    width: 50%;
+    padding: 20px;
+}
+
+.war-image img{
+    width: 100%;
+}
+
+.war-desc {
+    width: 50%;
+    padding-left: 0px;
+    padding-right: 50px;
+
+}
+
+.war-desc h1{
+    font-weight: bolder;
+    font-size:xx-large;
+}
+.war-desc p{
+    margin-top: 1rem;
+}
+
+.war-buttons{
+display: flex;
+justify-content: center;
+}
+
+.war-buttons button{
+    margin: 0 5px 0 5px;
+    margin-top: 1rem;
+}
+
+.war-buttons :nth-child(1){
+    color: rgb(231, 85, 74);
+    border: 2px solid rgb(231, 85, 74);
+}
+
+
+}
+
+
+.recommand{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+}
+.game-rec{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.swipe-btn{
+    color:rgb(237, 95, 95);
+    font-size: large;
+    padding: 5px;
+   cursor: pointer;
+   margin-left: 2rem;
+}
+
+.btn-sw{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+
+.rec-card{
+    display: flex;
+    width: 400px;
+    height: 200px;
+    margin: 2rem;
+}
+
+
+.rec-card > img{
+    width: 50%;
+}
+
+
+
+
+
+
+.rec-card > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    margin-left: 0.8rem;
+ }
+
+.rec-card > div > h2{
+    font-size:large;
+    margin-bottom: 1rem;
+}
+
+.rec-card > div > h4{
+    color:rgb(237, 95, 95);
+    font-size: 15px;
+}
+
+.rec-card > div > p{
+    color:rgb(126, 126, 126);
+    font-size: small;
+    margin-top: .8rem;
+}
+
+.rec-card > div > button{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(231, 85, 74);
+    border: none;
+    font-size:medium;
+    color: white;
+    padding: .3rem .5rem .3rem .5rem;
+    cursor: pointer;
+    text-align: center;
+    width: 100px;
+    text-align: center;
+}
+
+
+.game-type{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+ .most-played-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    padding-top: 3rem;
+ }
+
+ .most-played-section > h1{
+    color: white;
+    margin-bottom: 3rem;
+    font-size: xx-large;
+ }
+.most-played{
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    width: 50vw;
+}
+
+.most-played-one >img{
+    width: 100%;
+}
+
+ .most-played-two{
+    display: flex;
+    flex-direction: column;
+ }
+
+ .most-played-two > div >p{
+    color: rgb(189, 189, 189);
+    margin-top: 2rem;
+    font-size: medium;
+    
+ }
+ .most-played-two-img{
+    display: flex;
+    flex-direction: row;
+    margin-top: 3rem;
+ }
+
+
+ .most-played-two-img >.img-one{
+    width: 50%;
+    padding: 10px;
+ }
+
+
+ .most-played-two-img >.img-two{
+    margin-top: 3rem;
+    width: 50%;
+    padding: 10px;
+ }
+
+
+
+ @media (min-width: 900px) { 
+
+
+    .most-played-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgb(1, 1, 1);
+        padding-top: 3rem;
+        width: 100%;
+     }
+
+     .most-played{
+        display: flex;
+        flex-direction: row;
+    
+        justify-content: center;
+        width: 100vw;
+    }
+
+    .most-played-one >img{
+        width: 60%;
+    }
+    .most-played-one{
+        width: 40%;
+        
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        align-items: center;
+    }
+
+    .most-played-two{
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .most-played-two-img{
+        width: 100%;
+        display: flex;
+        justify-content: start;
+    }
+
+    .most-played-two-img > .img-one{
+        width: 30%;
+    }
+    .most-played-two-img > .img-two{
+        width: 30%;
+        margin-top: 5rem;
+    }
+    .most-played-two > div >p{
+        color: rgb(189, 189, 189);
+        margin-top: 2rem;
+        font-size: small;
+        width: 400px;
+     }
+
+     .most-played-two > div{
+        width: 90%;
+     }
+ }
+
+
+ .exp-sec{
+    width: 100%;
+    height:20rem;
+ }
+ .container >img{
+    width: 100%;
+    height: 20rem;
+    filter: brightness(40%);
+ }
+
+ .container {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+ .centered >h1{
+padding-bottom: 1rem;
+font-weight: bolder;
+font-size: xx-large;
+ }
+
+ .centered >p{
+        color: rgb(208, 205, 205);
+        font-size: medium;
+        
+        text-align: center;
+ }
+
+
+ 
+ .centered > button{
+    background-color: rgb(211, 64, 64);
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    margin-top: 1rem;
+ }
+
+
+
+ footer{
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+        width: 100%
+ }
+
+ footer > .copyrights{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+ }
+
+ .copyrights > img{
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+ }
+ .copyrights > p{
+    text-align: start;
+    width: 10rem;
+    margin-top: .5rem;
+ }
+.footer-sec > ul > li{
+    list-style: none;
+}
+
+.footer-sec > ul {
+    padding: 15px;
+}
+ .footer-sec{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 60%;
+ }

@@ -1,0 +1,1200 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+/* Navabr */
+section > .nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+
+.nav ul{
+    display: flex;
+}
+.nav ul li{
+    list-style: none;
+    padding: 0 .5rem;
+    cursor: pointer;
+}
+
+.nav ul li:hover{
+    list-style: none;
+    padding: 0 .5rem;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.nav button{
+    background-color: rgb(69, 135, 250);
+    padding: .7rem 1.8rem;
+    border-radius: 100px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+/* Main SEction */
+
+.main-sec{
+    padding-top: 1.5rem;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.main-sec > .main-one{
+    width: 40%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main-one  div > h1{
+    font-size: 4vw;
+}
+.main-one  div > p{
+    
+    margin: 1rem 0;
+    font-size:small;
+    color: rgb(177, 177, 177);
+}
+
+.main-sec > .main-two{
+    width: 40%;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.main-two > div >img{
+    width: 80%;
+}
+
+.main-btn > button{
+    border-radius: 100px;
+    padding: .4rem 1rem;
+    cursor: pointer;
+}
+
+.main-btn > .btn-1{
+    background-color: rgb(69, 135, 250);
+    color: white;
+}
+.main-btn > .btn-2{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border: 2px solid white;
+}
+
+/* Logos  section*/
+
+.logos{
+    
+    background-color: rgb(49, 48, 48);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.logo-sec{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+.logo-sec > img{
+    margin: .5rem 1rem;
+}
+
+
+
+
+
+/* service SEction */
+
+
+.service-sec{
+    margin-top: 2rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.service-sec > .service-text{
+    width: 80%;
+}
+.service-sec > .service-text >p, h2{
+text-align: center;
+margin: .4rem 0;
+}
+
+.service-card-sec{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    width: 90%;
+}
+
+.service-card-sec > .service-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    border-radius: 25px;
+    border: 1px solid rgb(164, 164, 164);
+    margin: 1rem .5rem;
+    padding: 1.3rem .5rem;
+}
+.service-card > img{
+    width: 2.7rem;
+}
+.service-card > h4{
+    text-align: center;
+    font-size: 1.1rem;
+    margin: .5rem 0;
+
+}
+.service-card > p{
+    text-align: center;
+    font-size: 0.7rem;
+    font-weight: 900;
+    color: rgb(60, 60, 60);
+}
+.service-card:nth-child(2){
+    position: relative;
+    background-color: black;
+    color: white;
+    top: -2rem;
+}
+.service-card:nth-child(2) > p{
+    color: rgb(195, 195, 195);
+}
+
+
+
+
+/* features */
+
+
+.features-sec{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.features-sec >h4{
+    font-size: large;
+    text-align: left;
+}
+.features{
+display: flex;
+flex-direction: row;
+justify-content: center;
+flex-wrap: wrap;
+width: 80%;
+margin-top: 3rem;
+}
+
+
+
+.features > .features-one{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.features > .features-two{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+
+.list-items {
+    border-radius: 50px;
+    padding: .4rem 1.5rem;
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: rgb(0, 0, 0);
+    border: 1px solid rgb(193, 193, 193);
+    margin: .6rem 0rem;
+}
+
+.features-one > .list-items:nth-child(1){
+    background-color: rgb(40, 123, 240);
+    color: white;
+}
+
+i{
+    text-align: center;
+    margin-bottom: .5rem;
+}
+
+
+.features-two > div{
+    background-color: black;
+    border-radius: 20px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.features-two > div > div{
+    border-radius: 50px;
+    padding: .2rem 1rem;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: rgb(255, 255, 255);
+    border: 2px solid black;
+    margin: .6rem 0rem;
+    background-color: rgb(81, 81, 81);
+}
+
+
+
+/* services */
+
+
+.hosting-sec{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+.hosting-sec > .services-h{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+.hosting-plans {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.hosting-plans > .cards{
+    margin: 2rem .5rem;
+    width: 18%;
+    border-radius: 12px;
+    padding: .3rem .6rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.cards > .plan-type{
+    font-size: medium;
+    font-weight: bold;
+}
+.cards > h5{
+    font-size: large;
+    font-weight: bolder;
+    margin: .5rem 0rem;
+}
+h5 > .months{
+    font-size: large;
+    font-weight: bolder;
+    color: rgb(156, 156, 156);
+}
+
+.cards > .plan-desc{
+    font-size: .7rem;
+    font-weight:700;
+
+}
+
+.cards > .plan-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.cards > .plan-details > div{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.hosting-pln-features > p{
+    width: 20%;
+}
+.hosting-pln-features > p > i{
+    color: rgb(40, 123, 240);
+}
+.hosting-pln-features > h5{
+    width: 70%;
+}
+
+hr.style-one {
+    margin: .3rem 0rem;
+    border: 0;
+    height: 1px;
+    background: rgb(248, 245, 245);
+    background-image: -webkit-linear-gradient(left, #ccc, #333, #ccc);
+    background-image: -moz-linear-gradient(left, #ccc, #333, #ccc);
+    background-image: -ms-linear-gradient(left, #ccc, #333, #ccc);
+    background-image: -o-linear-gradient(left, #ccc, #333, #ccc);
+}
+
+
+ .cards:nth-child(2){
+    background-color: rgb(74, 149, 255);
+    color: white;
+    margin: 2rem .5rem;
+    width: 18%;
+    border-radius: 12px;
+    padding: .3rem .6rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+ .plan-btn{
+display: flex;
+justify-content: center;
+ }
+
+
+.btn{
+    background-color: rgb(40, 123, 240);
+    border: none;
+    color: white;
+    border-radius: 20px;
+    margin: 0;
+    position: relative;
+    padding: .4rem 4rem;
+    cursor: pointer;
+}
+
+
+
+/* testmonials section */
+
+.testomial{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+   
+    align-items: center;
+}
+
+.test-txt{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    justify-content: space-between;
+}
+
+.test-txt > .test-txt-1{
+    width: 50%;
+}
+.test-txt > .test-txt-1 > h2{
+    text-align: left;
+}
+.test-txt > .test-txt-2{
+    width: 50%;
+}
+.test-txt > .test-txt-2 > p{
+    color: rgb(93, 93, 93);
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.review-c{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+
+.test-card{
+    width: 45%;
+    border-radius: 18px;
+    box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 2rem .7rem;
+    padding: 1rem .5rem;
+}
+
+.test-card > h3{
+    font-size: medium;
+    font-weight: bold;
+    margin: .7rem 0rem;
+}
+
+
+.test-card  > .pro{
+    font-style: italic;
+    font-weight: lighter;
+    font-size: smaller;
+    text-decoration: underline;
+    margin-bottom: .5rem;
+}
+.test-card  > p{
+    font-style:initial;
+    font-weight: bold;
+    font-size:medium;
+}
+
+
+.test-card  > .str{
+margin: 0.5rem 0rem;;
+}
+
+
+.test-card:nth-child(1){
+    background-color: black;
+    color: white;
+}
+
+
+/* sign up Sec */
+
+
+.signup-sec{
+    padding-top: 2rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:black;
+    color: white;
+}
+
+.signup-sec > .signup-txt{
+    margin: 1rem 1rem;
+    width: 80%;
+}
+.signup-sec > .signup-txt > h2{
+    font-size: 2rem;
+}
+.signup-sec > .signup-frm {
+    background-color: #333;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    padding: 3rem 2rem;
+    border-radius: 15px;
+    margin: 2rem 1rem;
+}
+.signup-sec > .signup-frm > form > input{
+    background-color: black;
+    border: none;
+    border-radius: 15px;
+    padding: .8rem 1.1rem;
+    color: white;
+}
+.signup-sec > .signup-frm > form > button{
+    background-color: rgb(40, 123, 240);
+    border: none;
+    border-radius: 15px;
+    padding: .8rem 1.1rem;
+    color: white;
+    cursor: pointer;
+
+}
+
+
+
+
+
+
+/* footer */
+
+
+
+.footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+}
+
+.footer > div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 80%;
+    color: white;
+    margin: 4rem 1rem;
+}
+
+
+.footer-list > li{
+    list-style: none;
+    cursor: pointer;
+    margin: .2rem ;
+}
+
+.footer-list > li:nth-child(1){
+    list-style: none;
+    
+    margin-bottom: .5rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+
+}
+
+hr.footer-hr{
+    width: 80%;
+    background-color: rgb(255, 255, 255);
+}
+
+
+@media screen and (max-width: 1000px) { 
+
+    
+/* Navabr */
+section > .nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+
+.nav ul{
+    display: flex;
+    display: none;
+}
+.nav ul li{
+    list-style: none;
+    padding: 0 .5rem;
+    cursor: pointer;
+}
+
+.nav ul li:hover{
+    list-style: none;
+    padding: 0 .5rem;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.nav button{
+    background-color: rgb(69, 135, 250);
+    padding: .7rem 1.8rem;
+    border-radius: 100px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+
+/* Main SEction */
+
+.main-sec{
+    padding-top: 1.5rem;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.main-sec > .main-one{
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-sec > .main-one > div{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-one  div > h1{
+    font-size: 4vw;
+    text-align: center;
+}
+.main-one  div > p{
+    text-align: center;
+    
+    margin: 1rem 0;
+    font-size:small;
+    color: rgb(177, 177, 177);
+}
+
+.main-sec > .main-two{
+    margin-top: 1.5rem;
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.main-sec > .main-two > div{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.main-two > div >img{
+    width: 50%;
+}
+
+
+/* Logos  section*/
+.logos{
+    background-color: rgb(45, 45, 45);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.logo-sec{
+    width: 950%;
+    flex-wrap: wrap;
+}
+.logo-sec > img{
+    margin: .5rem 1rem;
+}
+
+
+
+
+/* service SEction */
+
+
+.service-sec{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.service-sec > .service-text{
+    width: 80%;
+}
+.service-sec > .service-text >p{
+    text-align: center;
+    font-size: .8rem;
+    font-weight:lighter
+}
+.service-sec > .service-text > h2{
+    text-align: center;
+    font-size: 1rem;
+
+}
+.service-card-sec{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    width: 100%;
+}
+
+.service-card-sec > .service-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    border-radius: 25px;
+    border: 1px solid rgb(164, 164, 164);
+    margin: 1rem .5rem;
+    padding: .5rem .5rem;
+
+}
+.service-card > img{
+    width: 2.3rem;
+}
+.service-card > h4{
+    text-align: center;
+    font-size: .8rem;
+    margin: .5rem 0;
+}
+.service-card > p{
+    text-align: center;
+    font-size: .6rem;
+    font-weight: 900;
+    color: rgb(60, 60, 60);
+}
+
+.service-card:nth-child(2){
+    background-color: black;
+    color: white;
+}
+.service-card:nth-child(2) > p{
+    color: rgb(195, 195, 195);
+}
+
+
+
+
+
+
+/* features */
+
+
+.features-sec{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.features-sec >h4{
+    font-size: medium;
+    text-align: center;
+    margin: .0rem .5rem;
+}
+
+.features{
+display: flex;
+flex-direction: row;
+justify-content: center;
+flex-wrap: wrap;
+width: 90%;
+margin-top: 2rem;
+}
+
+
+
+.features > .features-one{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.features > .features-two{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+
+.list-items {
+    border-radius: 50px;
+    padding: .2rem .8rem;
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: rgb(0, 0, 0);
+    border: 1px solid rgb(215, 215, 215);
+    margin: .6rem 0rem;
+}
+
+.list-items > h5{
+    font-size: .6rem;
+}
+.features-one > .list-items:nth-child(1){
+    background-color: rgb(40, 123, 240);
+    color: white;
+}
+
+i{
+    text-align: center;
+    margin-bottom: .5rem;
+}
+
+
+.features-two > div{
+    background-color: black;
+    border-radius: 16px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.features-two > div > div{
+    border-radius: 50px;
+    padding: .1rem .8rem;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: rgb(255, 255, 255);
+    border: 2px solid black;
+    margin: .6rem 0rem;
+    background-color: rgb(81, 81, 81);
+}
+
+
+
+
+
+
+/* services */
+
+
+.hosting-sec{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+.hosting-sec > .services-h{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0rem 2rem;
+    text-decoration: underline;
+}
+
+
+.hosting-plans {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+.hosting-plans > .cards{
+    margin: 1rem .5rem;
+    width: 35%;
+    border-radius: 12px;
+    padding: .3rem .6rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.cards > .plan-type{
+    font-size: medium;
+    font-weight: bold;
+}
+.cards > h5{
+    font-size: large;
+    font-weight: bolder;
+    margin: .5rem 0rem;
+}
+h5 > .months{
+    font-size: large;
+    font-weight: bolder;
+    color: rgb(156, 156, 156);
+}
+
+.cards > .plan-desc{
+    font-size: .7rem;
+    font-weight:700;
+
+}
+
+.cards > .plan-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.cards > .plan-details > div{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.hosting-pln-features > p{
+    width: 20%;
+}
+.hosting-pln-features > p > i{
+    color: rgb(40, 123, 240);
+}
+.hosting-pln-features > h5{
+    width: 70%;
+}
+
+hr.style-one {
+    margin: .3rem 0rem;
+    border: 0;
+    height: 1px;
+    background: rgb(248, 245, 245);
+    background-image: -webkit-linear-gradient(left, #ccc, #333, #ccc);
+    background-image: -moz-linear-gradient(left, #ccc, #333, #ccc);
+    background-image: -ms-linear-gradient(left, #ccc, #333, #ccc);
+    background-image: -o-linear-gradient(left, #ccc, #333, #ccc);
+}
+
+
+ .cards:nth-child(2){
+    background-color: rgb(74, 149, 255);
+    color: white;
+    margin: 1rem .5rem;
+    width: 35%;
+    border-radius: 12px;
+    padding: .3rem .6rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+ .plan-btn{
+display: flex;
+justify-content: center;
+ }
+
+
+.btn{
+    background-color: rgb(40, 123, 240);
+    border: none;
+    color: white;
+    border-radius: 20px;
+    margin: 0;
+    position: relative;
+    padding: .4rem 2rem;
+    cursor: pointer;
+}
+
+
+
+
+
+
+/* testmonials section */
+
+.testomial{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.test-txt{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    justify-content: space-between;
+}
+
+.test-txt > .test-txt-1{
+    width: 50%;
+}
+.test-txt > .test-txt-1 > h2{
+    text-align: left;
+    font-size: 1.2rem;
+
+}
+.test-txt > .test-txt-2{
+    width: 50%;
+}
+.test-txt > .test-txt-2 > p{
+    color: rgb(93, 93, 93);
+    font-style: italic;
+    text-decoration: underline;
+    font-size: .9rem;
+}
+
+.review-c{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.test-card{
+    width: 48%;
+    border-radius: 18px;
+    box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 2rem .5rem;
+    padding: .7rem .5rem;
+}
+
+.test-card > h3{
+    font-size: medium;
+    font-weight: bold;
+    margin: .7rem 0rem;
+}
+
+
+.test-card  > .pro{
+    font-style: italic;
+    font-weight: lighter;
+    font-size: smaller;
+    text-decoration: underline;
+    margin-bottom: .5rem;
+}
+.test-card  > p{
+    font-style:initial;
+    font-weight: bold;
+    font-size:medium;
+}
+
+
+.test-card  > .str{
+margin: 0.5rem 0rem;;
+}
+
+
+.test-card:nth-child(1){
+    background-color: black;
+    color: white;
+}
+
+
+
+
+
+
+
+
+/* sign up Sec */
+
+
+.signup-sec{
+    padding-top: 2rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:black;
+    color: white;
+}
+
+.signup-sec > .signup-txt{
+    margin: 1rem 1rem;
+    width: 80%;
+}
+.signup-sec > .signup-txt > h2{
+    font-size: 2rem;
+}
+.signup-sec > .signup-frm {
+    background-color: #333;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    
+    padding: 3rem 2rem;
+    border-radius: 15px;
+    margin: 2rem 1rem;
+}
+
+.signup-sec > .signup-frm > form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.signup-sec > .signup-frm > form > input{
+    background-color: black;
+    border: none;
+    border-radius: 15px;
+    padding: .8rem 1.1rem;
+    color: white;
+    margin: .5rem .2rem;
+}
+.signup-sec > .signup-frm > form > button{
+    background-color: rgb(40, 123, 240);
+    border: none;
+    border-radius: 15px;
+    padding: .8rem 1.1rem;
+    color: white;
+    cursor: pointer;
+
+}
+
+
+
+
+
+
+/* footer */
+
+
+
+.footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+}
+
+.footer > div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+    color: white;
+    margin: 4rem 2rem;
+}
+
+
+.footer-list > li{
+    list-style: none;
+    cursor: pointer;
+    margin: .2rem ;
+    font-size: .8rem;
+}
+
+.footer-list > li:nth-child(1){
+    list-style: none;
+    
+    margin-bottom: .5rem;
+    font-size: 1rem;
+    font-weight: bold;
+
+}
+
+hr.footer-hr{
+    width: 80%;
+    background-color: rgb(255, 255, 255);
+}
+
+
+
+}

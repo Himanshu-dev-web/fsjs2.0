@@ -1,14 +1,12 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-
-
-
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
 
 
 *{
     padding: 0;
     margin: 0;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Noto Serif', serif;
+
 }
 
 
@@ -298,12 +296,15 @@ i{
     justify-content: center;
     align-items: center;
     margin-top: 4rem;
+    background-color: black;
+   padding: 4rem 0rem;
 }
 
 .hosting-sec > .services-h{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    color: white;
 }
 
 
@@ -311,21 +312,23 @@ i{
     width: 90%;
     display: flex;
     justify-content: center;
-    
+    margin-top: 2rem;
 }
 
 .hosting-plans > .cards{
+    background-color: white;
     margin: 2rem .5rem;
     width: 18%;
     border-radius: 12px;
-    padding: .3rem .6rem;
+    padding: 2rem .6rem;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .cards > .plan-type{
-    font-size: medium;
+    font-size: 1.4rem;
     font-weight: bold;
 }
+
 .cards > h5{
     font-size: large;
     font-weight: bolder;
@@ -335,6 +338,8 @@ h5 > .months{
     font-size: large;
     font-weight: bolder;
     color: rgb(156, 156, 156);
+    font-size: small;
+    font-weight: lighter;
 }
 
 .cards > .plan-desc{
@@ -362,14 +367,16 @@ h5 > .months{
     width: 20%;
 }
 .hosting-pln-features > p > i{
-    color: rgb(40, 123, 240);
+    color: 1B98F5
 }
 .hosting-pln-features > h5{
     width: 70%;
+    font-weight: lighter;
+    font-size: .8rem
 }
 
 hr.style-one {
-    margin: .3rem 0rem;
+    margin: 1.2rem 0rem;
     border: 0;
     height: 1px;
     background: rgb(248, 245, 245);
@@ -381,12 +388,12 @@ hr.style-one {
 
 
  .cards:nth-child(2){
-    background-color: rgb(74, 149, 255);
+    background-color: #1B98F5;
     color: white;
     margin: 2rem .5rem;
     width: 18%;
     border-radius: 12px;
-    padding: .3rem .6rem;
+    padding: 2rem .6rem;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -397,7 +404,7 @@ justify-content: center;
 
 
 .btn{
-    background-color: rgb(40, 123, 240);
+    background-color: #1B98F5;
     border: none;
     color: white;
     border-radius: 20px;
@@ -405,7 +412,16 @@ justify-content: center;
     position: relative;
     padding: .4rem 4rem;
     cursor: pointer;
+    margin-top: 1rem;
 }
+
+.arrl{
+    position:absolute;
+}
+.arrr{
+    position:absolute;
+}
+
 
 
 
@@ -424,6 +440,7 @@ justify-content: center;
     flex-direction: row;
     width: 80%;
     justify-content: space-between;
+    margin-top: 4rem;
 }
 
 .test-txt > .test-txt-1{
@@ -474,7 +491,7 @@ justify-content: center;
 }
 .test-card  > p{
     font-style:initial;
-    font-weight: bold;
+    font-weight: lighter;
     font-size:medium;
 }
 

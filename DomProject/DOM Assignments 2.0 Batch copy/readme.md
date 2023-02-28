@@ -4,7 +4,7 @@
 > The user has to append a new element in the navigation bar name 'hire me ' after the projects 
 
 ## After Update
-![alt text](./DOM%20Assignment%202.0%201%2C2%2C3/firstAssignmentImage/task1Output.png)
+![task1Output](https://user-images.githubusercontent.com/55054295/221917530-c1a5d6c7-3e78-4724-847a-170899fe15c3.png)
 
 ## Solution of task 1 :
 
@@ -21,7 +21,8 @@ menu.appendChild(element);
 > The user has to change the placeholder to in the navbar searchbar to 'Search My Project'
 
 ## After Update
-![alt text](./DOM%20Assignment%202.0%201%2C2%2C3/firstAssignmentImage/task2Output.png)
+![task2Output](https://user-images.githubusercontent.com/55054295/221917591-d1066b18-5fe4-46fb-813c-7cd10685657a.png)
+
 
 ## Solution of task 2 :
 
@@ -36,7 +37,8 @@ input.placeholder = "Search my Project";
 > The user has to change the user information "freelancer" to "An Employee" and "National And Intenational client" to "Ineuron Intelligence Pvt Limited ".
 
 ## After Update
-![alt text](./DOM%20Assignment%202.0%201%2C2%2C3/firstAssignmentImage/task3Output.png)
+![task3Output](https://user-images.githubusercontent.com/55054295/221917651-9d7624cc-7a55-4cca-858b-0f4323eeec19.png)
+
 
 ## Solution of task 3 :
 
@@ -51,10 +53,10 @@ item[2].innerText= "Ineuron Intelligence Private Limited ";
 
 
 # _Task 4_
-> The user need to change the "avator" image with the image of "Hitesh Master".
+> The user need to change the "avator" image with the image of "Hitesh Master"
 
 ## After Update
-![alt text](./DOM%20Assignment%202.0%201%2C2%2C3/firstAssignmentImage/task4Output.png)
+![Uploading task4Output.png…]()
 
 ## Solution of task 4 :
 
@@ -70,7 +72,7 @@ img.src="https://yt3.googleusercontent.com/ytc/AL5GRJUyTXpRBuqZYPgLhRJvWBXCj8TLx
 > The user need to add one more button with chat with me button.
 
 ## After Update
-![alt text](./DOM%20Assignment%202.0%201%2C2%2C3/firstAssignmentImage/task5Output.png)
+![task5Output](https://user-images.githubusercontent.com/55054295/221917836-8ec4ce5b-b68d-4b06-b01e-b9308e791b08.png)
 
 ## Solution of task 5 :
 
@@ -91,8 +93,8 @@ parent.appendChild(btn);
 # _Task _
 > The user need to add one more section "Skils" in about page .
 
-## After Update
-![alt text](../DOM%20Assignments%202.0%20Batch%20copy/DOM%20Assignment%202.0%201%2C2%2C3/secondAssignmentImage/task1Output.png)
+## After 
+![task2Output](https://user-images.githubusercontent.com/55054295/221918251-4dfb2bb2-9d6f-4c57-8cf5-a73420a7aa82.png)
 
 ## Solution of task  :
 
@@ -121,7 +123,7 @@ element.appendChild(newdiv);
 > The user need to change the placeholder in contack us page as given in output image.
 
 ## After Update
-![alt text](../DOM%20Assignments%202.0%20Batch%20copy/DOM%20Assignment%202.0%201%2C2%2C3/thirdAssignmentImage/task1Output.png)
+![task1Output](https://user-images.githubusercontent.com/55054295/221918311-9a08c9f5-8ddb-4efd-94b1-489766b4ee9f.png)
 
 ## Solution of task  :
 
@@ -148,8 +150,6 @@ changePlaceholder(userMessage,"Hello World")
 
 
 ```
-
-
 #
 # Dom Assignment 4
 
@@ -158,7 +158,9 @@ changePlaceholder(userMessage,"Hello World")
 > The user need to change the footer part color.
 
 ## After Update
-![alt text](../DOM%20Assignments%202.0%20Batch%20copy/04_DOM%20Project/04_DOM%20Project/Output/DOM%20P1%20SS.png)
+
+![DOM P1 SS](https://user-images.githubusercontent.com/55054295/221918387-decbcda3-f282-4596-b32e-85b7d4e26dc0.png)
+
 
 ## Solution of task  :
 
@@ -197,7 +199,7 @@ cards.forEach(element => {
 > The user need to add one more button in navbar section adjacent to contact.
 
 ## After Update
-![alt text](./05_DOM%20Project/05_DOM%20Project/Output/DOM%20P2%20SS.png)
+![DOM P2 SS](https://user-images.githubusercontent.com/55054295/221918443-51f63235-e155-4632-8a57-b084cd022695.png)
 
 ## Solution of task1  :
 
@@ -235,7 +237,8 @@ RecipiesList.appendChild(newli);
 > The user main logo to ineuron logo.
 
 ## After Update
-![alt text](./06_DOM%20Project/06_DOM%20Project/Output/DOM%20P3%20SS-1.png)
+![DOM P3 SS-1](https://user-images.githubusercontent.com/55054295/221918510-8019bf9d-f7ce-406f-851e-474f92555d58.png)
+
 
 ## Solution of task1  :
 
@@ -250,7 +253,9 @@ logo.src = "./assets/ineuron-logo.png"
 > The user needs to change the price to 10$.
 
 ## After Update
-![alt text](./06_DOM%20Project/06_DOM%20Project/Output/DOM%20P3%20SS-2.png)
+
+![DOM P3 SS-2](https://user-images.githubusercontent.com/55054295/221918535-174a1765-1664-4676-8e99-ae99c91117ee.png)
+
 
 ## Solution of task 2  :
 
@@ -269,7 +274,8 @@ appPrice.innerText = "$10";
 > The user needs to remove every language that includes 2.0 in their name.
 
 ## After Update
-![alt text](./DOM%20P7/DOM%20P7/ass7.1-after.png)
+![ass7 1-after](https://user-images.githubusercontent.com/55054295/221918614-7a58b1a2-d580-4797-9695-290cfcf4f2d6.png)
+
 
 ## Solution of task1  :
 
@@ -292,7 +298,9 @@ languages.forEach(elem => {
 > The user needs use js to write something in the input box and submit the form and the language in the left card should come back.
 
 ## After Update
-![alt text](./DOM%20P7/DOM%20P7/ass7.2-after.png)
+
+![ass7 2-after](https://user-images.githubusercontent.com/55054295/221918684-1998508b-6f4e-4009-9134-6353429a9f82.png)
+
 
 ## Solution of task 2  :
 
@@ -325,7 +333,9 @@ form.addEventListener("submit", (event) => {
 > The user needs to add scroller bar.
 
 ## After Update
-![alt text](./DOM%20P8/DOM%20P8/ass8.1-after.png)
+
+<img width="770" alt="ass8 1-after" src="https://user-images.githubusercontent.com/55054295/221918754-1d482d7d-a465-4581-bf71-c5989ecd34ac.png">
+
 
 ## Solution of task1  :
 
@@ -356,7 +366,8 @@ p.insertAdjacentElement('afterend', newLine).insertAdjacentElement('afterend', n
 > The user needs to remove background image.
 
 ## After Update
-![alt text](./DOM%20P8/DOM%20P8/ass8.2-after.png)
+
+![ass8 2-after](https://user-images.githubusercontent.com/55054295/221918805-9978f763-9ad1-4638-8ccb-4083842e4d4e.png)
 
 ## Solution of task 2  :
 
@@ -370,9 +381,11 @@ document.body.style.backgroundImage = "none";
 > The user needs to add toggle functionality in navgation bar.
 
 ## After Update
-![alt text](./DOM%20P8/DOM%20P8/ass8.3-after.png)
+
 
 ## Solution of task 3  :
+
+![ass8 3-after](https://user-images.githubusercontent.com/55054295/221918840-d5684260-6dc5-4561-aba8-fe4df35cc398.png)
 
 
 ```sh
@@ -402,7 +415,8 @@ collapsebtn.addEventListener('click', function() {
 > The user needs chagne colour of main title of page to red.
 
 ## After Update
-![alt text](./DOM%20P9/DOM%20P9/ass9.1-after.png)
+![ass9 1-after](https://user-images.githubusercontent.com/55054295/221918927-aa17675b-14ba-4dde-9276-a13c01732235.png)
+
 
 ## Solution of task1  :
 
@@ -416,7 +430,8 @@ maintitle.style.color = "#dc143c";
 > The user needs to adds hover functionality that changes colour on hover to red of add to card button.
 
 ## After Update
-![alt text](./DOM%20P9/DOM%20P9/ass9.2-after.png)
+
+![ass9 2-after](https://user-images.githubusercontent.com/55054295/221919009-4a3ffe9a-0bad-496f-b177-cb8212d7ad35.png)
 
 ## Solution of task 2  :
 

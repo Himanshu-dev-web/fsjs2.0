@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Application</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body{
+            /* background-image: url("https://images.unsplash.com/photo-1469122312224-c5846569feb1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1289&q=80"); */
+            background-size:cover;
+            height: 90vh;
+        }
+        .card-overlay {
+        background: rgba(0, 0, 0, 0.3);
+        }
+
+
+        
+    </style>
+</head>
+
+<body>
+    
+
+<div class="w-[80%] mx-auto flex  border border-gray-700  mt-6">
+<form onsubmit="getdata(event)"  class="w-[60%] mx-auto  mt-6">
+    <div class="mb-6 flex">
+        <h1 onclick="findMyState()" class=" p-2 border border-gray-400 w-[20%] rounded hover:bg-gray-300 "><i class="fa fa-location-arrow text-gray-800 px-[40%]" style="font-size:24px; color: rgb(162, 162, 162);"></i></h1>
+
+        <input id="input" class="p-2.5 border border-gray-500 w-[80%] rounded" type="text" name="" id="" placeholder=" Enter Your Place Name..">
+        <button type="submit" class=" p-2 border border-gray-400 w-[20%] rounded hover:bg-gray-300"><i class="fa fa-search text-gray-700" style="font-size:24px; color:rgb(162, 162, 162);"></i></button>
+    </div>
+  </form>
+</div>
+
+<div class="w-[80%] mx-auto  mt-6">
+    <div class="card-overlay">
+
+    <img id="img" class=" mx-auto	 w-[15%] h-[10%]" src="https://cdn-icons-png.flaticon.com/512/164/164806.png" alt="">
+    <h2 class="text-center italic	text-xl mt-2 font-bold text-white" > <span  id="temp"></span> °C</h2>
+
+    <h1 class="text-center	text-3xl text-white"><span class="underline"  id="city"> ,</span> <span class="underline" id="state">,</span> <span class="underline" id="country"></span></h1>
+    <h2 class="text-center italic	text-2xl mt-4 text-white" id="airq" ></h2>
+    <h2 class="text-center italic	text-xl mt-2 font-bold text-white" id="DN"></h2>
+    <p class="text-center	text-l mt-2 text-white">Updated As of : <span class="font-bold text-white" id="time"></span></p>
+
+    <div class="w-[100%] lg:w-[70%]   mx-auto flex justify-center flex-wrap	shadow-xl rounded mt-6 py-4">
+        <div class="px-4 text-sm text-white underline p-1">Feels Like : <span class="font-bold " id="tempfeels"> </span>  °C</div>
+
+        <div class="px-4 text-sm text-white underline p-1">Wind : <span class="font-bold" id="wspeed"></span> km/h</div>
+        <div class="px-4 text-sm text-white underline p-1">Visibility : <span class="font-bold" id="visibility"> </span> km</div>
+        <div class="px-4 text-sm text-white p-1">Air Quality Index : <span class="font-bold rounded text-white p-1" id="Aiq"></span></div>
+        <div class="px-4 text-sm text-white underline p-1">Humidity : <span class="font-bold" id="humidity"></span> %</div>
+    </div>
+</div>
+
+
+    <script src="./script.js"></script>
+</body>
+</html>

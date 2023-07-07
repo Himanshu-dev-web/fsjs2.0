@@ -1,25 +1,19 @@
-import java.util.Arrays;
-
-public class questionseven {
-    public static void main(String[] args) {
-        
-        
-        int[] nums = {0,1,0,3,12};
-        int tempindex = 0;
 
 
-        for(int i=0; i<nums.length;i++){
-            if(nums[i] != 0){
-                nums[tempindex++] = nums[i];
+class Solution {
+        public boolean isMonotonic(int[] nums) {
+        int c=0;int k=0;
+                    for(int i=0;i<nums.length-1;i++)
+                        {
+                        if(nums[i+1]>=nums[i])
+                        c++;
+                        if(nums[i]>=nums[i+1])
+                        k++;
+                        }
+                        if(c==nums.length-1||k==nums.length-1)
+                return true;
+                else
+                return false;
+            
             }
-        }
-
-
-        for(int i = tempindex ; i < nums.length ; i++){
-            nums[i] = 0; 
-        }
-
-
-        System.out.println(Arrays.toString(nums));
-    }
-}
+            }

@@ -1,20 +1,19 @@
 
 public class questiontwo {
 
-    public static void main(String[] args) {
+   
+    public int distributeCandies(int[] candyType) {
         
-        int[] nums = {3,2,2,3};
-        int val = 2;
-        if(nums.length == 0) System.out.println(0);
-        int size = 0;
-        for (int i = 0; i <nums.length; i++) {
-            if(nums[i] != val){
-                nums[size] = nums[i];
-                size++;
-            }
+        HashSet<Integer> set = new HashSet<>();
+
+        int n = candyType.length;
+
+        for(int i=0; i<n;i++){
+            set.add(candyType[i]);
         }
 
-        System.out.println(size);
+
+        return min(set.size(),n/2);
     }
-    
+
 }

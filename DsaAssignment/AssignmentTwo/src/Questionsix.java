@@ -1,17 +1,16 @@
-class Solution {
-    public int search(int[] nums, int target) {
+    public int search(int[] arr, int target) {
         int s = 0;
-        int e = nums.length-1;
+        int e = arr.length-1;
         
         while(s <= e){
             
             int mid = s +(e-s)/2;
 
             
-            if(target > nums[mid]){
+            if(target > arrr[mid]){
                 s = mid+1;
             }
-            else if(target < nums[mid]){
+            else if(target < arr[mid]){
                 e = mid-1;
             }
             else{
@@ -20,4 +19,4 @@ class Solution {
         }
         return -1;
     }
-}
+

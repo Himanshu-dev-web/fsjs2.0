@@ -1,17 +1,23 @@
-import java.util.HashSet;
+class Solution {
+    public int search(int[] nums, int target) {
+        int s = 0;
+        int e = nums.length-1;
+        
+        while(s <= e){
+            
+            int mid = s +(e-s)/2;
 
-public class Questionsix {
-    public static void main(String[] args) {
-        HashSet<Integer> hsh = new HashSet<>();
-
-        int[] arr = {1,2,3,3,5,6};
-
-        for (int i = 0; i < arr.length; i++) {
-            hsh.add(arr[i]);
+            
+            if(target > nums[mid]){
+                s = mid+1;
+            }
+            else if(target < nums[mid]){
+                e = mid-1;
+            }
+            else{
+                return mid;
+            }
         }
-
-        System.out.println(hsh.size());
-        System.out.println(arr.length);
+        return -1;
     }
-
 }

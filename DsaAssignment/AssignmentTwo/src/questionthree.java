@@ -1,32 +1,22 @@
-public class questionthree {
-    public static void main(String[] args) {
-        
-        int[] nums = {1,3,5,6} ; 
-        int target = 5;
-
-        int start = 0;
-        int end = nums.length -1;
-        
-            
-        while(start <= end){
-            
-            int mid  = start + (end - start)/2;
-            if(target == nums[mid]){
-                System.out.println(mid);
-                    break;
-                }
-            if(target > nums[mid]){
-                start = mid+1;
+class Solution {
+    public int findLHS(int[] nums) {
+       if(nums.length == 0){
+           return 0;
+       }
+        Arrays.sort(nums);
+        int left = 0, right = 1;
+        int ArrayLen = 0;
+        while(right < nums.length){
+            int diff = nums[right]-nums[left];
+            if(diff==1){
+                ArrayLen = Math.max(ArrayLen, right-left+1);
             }
-            else if(target < nums[mid]){
-                end  = mid-1;
-            }
-            else{
-                    System.out.println(mid);
-                    break;
+            if(diff <= 1){
+                right++;
+            }else{
+                left++;
             }
         }
-            System.out.println(start);
-
+        return ArrayLen;
     }
 }

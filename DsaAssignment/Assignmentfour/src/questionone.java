@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.HashSet;
  
-class GFG {
+class main {
     static void findCommon(int a[], int b[], int c[], int n1, int n2,int n3)
 {
     // three sets to maintain frequency of elements

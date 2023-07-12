@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Todo List App</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #584dd3;
+    }
+    
+    h1 {
+      text-align: center;
+    }
+    
+    .todo-container {
+      max-width: 400px;
+      margin: 20px auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 4px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    .todo-input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-bottom: 10px;
+    }
+    
+    .todo-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 10px;
+      background-color: #1424db;
+      padding: 4rem;
+      margin: 1rem;
+      color: #fff;
+    }
+    
+    .todo-item label {
+      flex-grow: 1;
+      margin-left: 10px;
+    }
+    
+    .todo-item button {
+      margin-left: 10px;
+      cursor: pointer;
+      margin: 1rem 0;
+    }
+    
+    .todo-item.completed label {
+      text-decoration: line-through;
+      color: #aaa;
+    }
+    #todo-list{
+      display: flex;
+      margin: 2rem;
+    }
+    .item{
+      display: flex;
+      flex-direction: columna;
+    }
+  </style>
+</head>
+<body>
+  <div class="todo-container">
+    <h1>Todo List App</h1>
+    <input type="text" id="todo-input" class="todo-input" placeholder="Enter a task">
+    <button id="add-btn">Add Task</button>
+  </div>
+
+  
+        <div id="todo-list">
+
+        </div>
+  
+
+  <script>
+    const todoInput = document.getElementById('todo-input');
+    const addBtn = document.getElementById('add-btn');
+    const todoList = document.getElementById('todo-list');
+    let todos = [];
+
+    addBtn.addEventListener('click', addTodo);
+    todoList.addEventListener('click', handleTodoListClick);
+
+    function addTodo() {
+      const task = todoInput.value.trim();
+      if (task !== '') {
+        const todo = {
+          id: Date.now(),
+          task: task,
+          completed: false
+        };
+        todos.push(todo);
+        renderTodoItem(todo);
+        todoInput.value = '';
+      }
+    }
+
+    function renderTodoItem(todo) {
+      const li = document.createElement('li');
+
+      li.className = 'todo-item' + (todo.completed ? ' completed' : '');
+      li.setAttribute('data-id', todo.id);
+
+      const checkbox = document.createElement('input');
+      checkbox.type = 'checkbox';
+      checkbox.checked = todo.completed;
+
+      const label = document.createElement('label');
+      label.textContent = todo.task;
+
+      const updateBtn = document.createElement('button');
+      updateBtn.textContent = 'Update';
+
+      const deleteBtn = document.createElement('button');
+      deleteBtn.textContent = 'Delete';
+
+      li.appendChild(label);
+      li.appendChild(checkbox);
+
+      li.appendChild(updateBtn);
+      li.appendChild(deleteBtn);
+      todoList.appendChild(li);
+    }
+
+    function handleTodoListClick(event) {
+      const target = event.target;
+      const todoItem = target.closest('.todo-item');
+
+      if (target.type === 'checkbox') {
+        const todoId = parseInt(todoItem.getAttribute('data-id'));
+        const todo = todos.find(todo => todo.id === todoId);
+        todo.completed = target.checked;
+        todoItem.classList.toggle('completed');
+      } else if (target.textContent === 'Update') {
+        const todoId = parseInt(todoItem.getAttribute('data-id'));
+        const todo = todos.find(todo => todo.id === todoId);
+        const updatedTask = prompt('Enter updated task:', todo.task);
+        if (updatedTask !== null) {
+          todo.task = updatedTask.trim();
+          todoItem.querySelector('label').textContent = todo.task;
+        }
+      } else if (target.textContent === 'Delete') {
+        const todoId = parseInt(todoItem.getAttribute('data-id'));
+        deleteTodoById(todoId);
+        todoList.removeChild(todoItem);
+      }
+    }
+
+    function deleteTodoById(todoId) {
+      todos = todos.filter(todo => todo.id !== todoId);
+    }
+  </script>
+</body>
+</html>
